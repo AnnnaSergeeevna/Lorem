@@ -1,0 +1,319 @@
+:root {
+    --orange: rgba(249, 114, 71, 1);
+    --burgundy: rgb(45, 20, 19);
+    --lime: rgba(235, 242, 157, 1);
+    --khaki: rgb(26, 29, 12);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--khaki);
+    background: linear-gradient(255.96deg, #F99247 0%, var(--khaki) 30% 70%, #352223 80%, var(--khaki) 100%);
+}
+
+
+
+.logo_clear {
+    width: 100px;
+}
+
+.header {
+    height: 96px;
+    width: 1640px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    color: white;
+    border: solid 2px var(--orange);
+    border-radius: 49px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.nav {
+    display: flex;
+    columns: 6;
+    list-style: none;
+    color: white;
+
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+    gap: 32px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.header-buttons {
+    display: flex;
+    padding-right: 48px;
+
+}
+
+.btn-lang {
+    height: 48px;
+    width: 75px;
+    margin-right: 14px;
+    opacity: 0px;
+    color: white;
+    background: none;
+    border: solid 2px var(--lime);
+    border-radius: 24px;
+}
+
+.btn-secondary {
+    height: 48px;
+    width: 75px;
+    gap: 8px;
+    margin-right: 14px;
+    opacity: 0px;
+    color: white;
+    background: none;
+    border: solid 2px var(--lime);
+    border-radius: 24px;
+}
+
+.btn-orange-prim {
+    height: 48px;
+    width: 75px;
+    gap: 8px;
+    color: white;
+    background-color: var(--orange);
+    border-radius: 24px;
+    border: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1920px;
+    margin-left: 140px;
+    /* margin-top: 196px; */
+    /* background: linear-gradient(180deg, #FFFFFF 63.64%, rgba(255, 255, 255, 0) 95.45%); */
+    /* background: linear-gradient(180deg, #F947BC 0%, rgba(249, 71, 124, 0.4) 100%);
+    background: linear-gradient(255.96deg, #F99247 0%, #F29DA2 100%); */
+}
+
+.title {
+    width: 669px;
+    margin-top: 296px;
+}
+
+.title-w {
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 96px;
+    line-height: 0px;
+    padding: 0px;
+    text-align: left;
+    color: white;
+}
+
+.title-o {
+    font-size: 48px;
+    padding: 0px;
+    color: var(--orange);
+}
+
+.title-g {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-orange-prim-partnr {
+    height: 48px;
+    width: 121px;
+    gap: 8px;
+    color: white;
+    background-color: var(--orange);
+    border-radius: 24px;
+}
+
+.bannerBG {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 333.8px;
+    height: 1334.22px;
+    overflow: hidden;
+    z-index: -1;
+    Opacity: 40%;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    /* Высота карусели равна высоте контейнера */
+    overflow: hidden;
+}
+
+.line img,
+.line .line-1-Group {
+    margin-bottom: 10px;
+}
+
+.line-1-Group {
+    width: 86px;
+    height: 199px;
+    border: solid 4px rgba(17, 248, 165, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.radius-1-Group {
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes scroll-reverse {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.line-1 {
+    animation: scroll 10s linear infinite;
+}
+
+.line-2 {
+    animation: scroll-reverse 12s linear infinite;
+}
+
+.line-3 {
+    animation: scroll 14s linear infinite;
+}
+
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    width: 531px;
+    margin-right: 140px;
+    margin-top: 140px;
+    margin-left: 64px;
+    gap: 24px;
+    opacity: 0px;
+    align-items: center;
+}
+
+.blogH2 {
+    color: white;
+    align-items: center;
+    font-size: 40px;
+}
+
+.blog-container {
+    display: flex;
+    width: 531px;
+    height: 595px;
+    gap: 0px;
+    border-radius: 100px;
+    border: solid 3px var(--orange);
+    opacity: 0px;
+    overflow-x: 80%;
+    overflow: scroll;
+    scrollbar-width: 10px;
+    padding: 16px;
+    background-color: none;
+}
+
+.blog-container::-webkit-scrollbar {
+    width: 16px;
+    height: 60%;
+}
+
+.blog-container::-webkit-scrollbar-track {
+    height: 50px;
+}
+
+/* Стилизация ползунка полосы прокрутки */
+.blog-container::-webkit-scrollbar-thumb {
+    background-color: rgba(249, 114, 71, 1);
+    border-radius: 10px;
+    height: 80px;
+    border: 10px solid rgba(255, 255, 255, 0);
+    padding: 10px;
+}
+
+/* Дополнительно можно настроить поведение при наведении */
+.blog-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(249, 114, 71, 0.8);
+}
+
+.blog-container ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+.blog-container li {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.blog-element {
+    box-sizing: border-box;
+    width: 467px !important;
+    height: 146px;
+    padding: 16px 64px 16px 64px;
+    gap: 0px;
+    border-radius: 196px;
+    opacity: 0px;
+    background-color: var(--burgundy);
+}
+
+.blog-p {
+    font-family: Lexend;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 0;
+}
+
+.blog-date {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 8px;
+}
