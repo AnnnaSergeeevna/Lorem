@@ -9,10 +9,37 @@
 body {
     font-family: Arial, sans-serif;
     background: var(--khaki);
-    background: linear-gradient(255.96deg, #F99247 0%, var(--khaki) 30% 70%, #352223 80%, var(--khaki) 100%);
+    background-image: url('./Dot-Light-rose.png'), url('./Dot-Light.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
 }
 
+img.masked-image {
+    -webkit-mask-image: url('./Dot-Light.png');
+    -webkit-mask-size: 20%;
+    -webkit-mask-repeat: no-repeat;
+    width: 574px;
+    height: 574px;
+    position: absolute;
+    top: 570px;
+    left: 1505px;
+    opacity: 0.7;
+}
 
+img.masked-image {
+    -webkit-mask-image: url('./Dot-Light-rose.png');
+    -webkit-mask-size: 20%;
+    -webkit-mask-repeat: no-repeat;
+    width: 226px;
+    height: 1302px;
+    position: absolute;
+    top: 184px;
+    left: -307px;
+    opacity: 0.55;
+    transform: rotate(54.31deg);
+}
 
 .logo_clear {
     width: 100px;
@@ -146,26 +173,35 @@ ul {
 
 .bannerBG {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 100px;
     width: 333.8px;
     height: 1334.22px;
     overflow: hidden;
     z-index: -1;
-    Opacity: 40%;
+    opacity: 0.4;
 }
 
 .line {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    /* Высота карусели равна высоте контейнера */
     overflow: hidden;
 }
 
+.line-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200%;
+    animation: scroll 20s linear infinite;
+}
+
 .line img,
-.line .line-1-Group {
+.line-1-Group {
     margin-bottom: 10px;
 }
 
@@ -192,31 +228,23 @@ ul {
     }
 
     100% {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
     }
 }
 
-@keyframes scroll-reverse {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+.line-1 .line-content {
+    animation-duration: 10s;
 }
 
-.line-1 {
-    animation: scroll 10s linear infinite;
+.line-2 .line-content {
+    animation-direction: reverse;
+    animation-duration: 5s;
 }
 
-.line-2 {
-    animation: scroll-reverse 12s linear infinite;
+.line-3 .line-content {
+    animation-duration: 10s;
 }
 
-.line-3 {
-    animation: scroll 14s linear infinite;
-}
 
 
 .blog {
