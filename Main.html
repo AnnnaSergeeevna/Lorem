@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <title>Lorem IPSU</title>
     <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header class="header">
         <img class="logo_clear" src="./logo_horizontal_clear Small.png" alt="logo">
+        <div class="burger-menu" onclick="toggleMenu()"><img class="planetImg" src="./planet.svg" alt="planet">☰</div>
         <nav class="nav">
-            <ul>
+            <ul class="points">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Grand</a></li>
                 <li><a href="#">Commissions</a></li>
@@ -19,111 +21,165 @@
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#">Careers</a></li>
             </ul>
+            <div class="header-buttons">
+                <button class="btn-lang"><img src="./planet.svg" alt="planet"> RU</button>
+                <button class="btn-secondary">LOG IN</button>
+                <button class="btn-orange-prim">SIGN UP</button>
+            </div>
         </nav>
-        <div class="header-buttons">
-            <button class="btn-lang"><img src="./planet.svg" alt="planet"> RU</button>
-            <button class="btn-secondary">LOG IN</button>
-            <button class="btn-orange-prim">SIGN UP</button>
-        </div>
     </header>
     <main>
         <div class="main">
             <div class="title">
-                <h1 class="title-w">Lorem IPSU</h1>
+                <div class="title-div-mobile">
+                    <h1 class="title-w">Lorem </h1>
+                    <h1 class="title-w">IPSU</h1>
+                </div>
                 <h1 class="title-o">OPEN</h1>
                 <h4 class="title-g">Maybe You Maybe Me.</h4>
+
                 <button class="btn-orange-prim-partnr"> Partner</button>
             </div>
             <div class="bannerBG">
                 <div class="line line-1">
-                    <div class="line-content">
+                    <div class="line-content marquee">
                         <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
                         </div>
                         <img src="./Crown.png" alt="Crown icon">
                         <img src="./Shield.png" alt="Shield icon">
                         <img src="./Soccer.png" alt="Soccer icon">
                         <img src="./M.png" alt="M icon">
-                        <div class="line-1-Group" aria-hidden="true"><img class="radius-1-Group" src="./Group.png"
-                                alt="Group $ icon" aria-hidden="true"></div>
-                        <img src="./Crown.png" alt="Crown icon">
-                        <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
-                        <img src="./Soccer.png" alt="Soccer icon" aria-hidden="true" aria-hidden="true">
-                        <img src="./M.png" alt="M icon" aria-hidden="true" aria-hidden="true">
                         <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
                         </div>
                         <img src="./Crown.png" alt="Crown icon">
                         <img src="./Shield.png" alt="Shield icon">
                         <img src="./Soccer.png" alt="Soccer icon">
                         <img src="./M.png" alt="M icon">
-                        <div class="line-1-Group" aria-hidden="true"><img class="radius-1-Group" src="./Group.png"
-                                alt="Group $ icon" aria-hidden="true"></div>
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
+                        </div>
                         <img src="./Crown.png" alt="Crown icon">
-                        <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
-                        <img src="./Soccer.png" alt="Soccer icon" aria-hidden="true" aria-hidden="true">
-                        <img src="./M.png" alt="M icon" aria-hidden="true" aria-hidden="true">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Soccer.png" alt="Soccer icon">
+                        <img src="./M.png" alt="M icon">
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
+                        </div>
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Soccer.png" alt="Soccer icon">
+                        <img src="./M.png" alt="M icon">
+                    </div>
+                    <div class="line-content marquee" aria-hidden="true">
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
+                        </div>
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Soccer.png" alt="Soccer icon">
+                        <img src="./M.png" alt="M icon">
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
+                        </div>
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Soccer.png" alt="Soccer icon">
+                        <img src="./M.png" alt="M icon">
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
+                        </div>
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Soccer.png" alt="Soccer icon">
+                        <img src="./M.png" alt="M icon">
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./Group.png" alt="Group $ icon">
+                        </div>
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Soccer.png" alt="Soccer icon">
+                        <img src="./M.png" alt="M icon">
                     </div>
                 </div>
                 <div class="line line-2">
-                    <div class="line-content">
+                    <div class="line-content marquee">
                         <img src="./Ml2.png" alt="Ml2 icon">
                         <img src="./Timer.png" alt="Timer icon">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
                         <img src="./Crown.png" alt="Crown icon">
-                        <div class="line-1-Group">
-                            <img class="radius-1-Group" src="./World.png" alt="World icon">
-                        </div>
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./World.png" alt="World icon"></div>
                         <img src="./Ml2.png" alt="Ml2 icon" aria-hidden="true">
                         <img src="./Timer.png" alt="Timer icon" aria-hidden="true">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
                         <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
-                        <div class="line-1-Group" aria-hidden="true">
-                            <img class="radius-1-Group" src="./World.png" alt="World icon">
-                        </div>
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./World.png" alt="World icon"></div>
+                        <img src="./Ml2.png" alt="Ml2 icon" aria-hidden="true">
+                        <img src="./Timer.png" alt="Timer icon" aria-hidden="true">
+                        <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
+                        <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
+                    </div>
+                    <div class="line-content marquee" aria-hidden="true">
                         <img src="./Ml2.png" alt="Ml2 icon">
                         <img src="./Timer.png" alt="Timer icon">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
                         <img src="./Crown.png" alt="Crown icon">
-                        <div class="line-1-Group">
-                            <img class="radius-1-Group" src="./World.png" alt="World icon">
-                        </div>
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./World.png" alt="World icon"></div>
                         <img src="./Ml2.png" alt="Ml2 icon" aria-hidden="true">
                         <img src="./Timer.png" alt="Timer icon" aria-hidden="true">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
                         <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
-                        <div class="line-1-Group" aria-hidden="true">
-                            <img class="radius-1-Group" src="./World.png" alt="World icon">
-                        </div>
+                        <div class="line-1-Group"><img class="radius-1-Group" src="./World.png" alt="World icon"></div>
+                        <img src="./Ml2.png" alt="Ml2 icon" aria-hidden="true">
+                        <img src="./Timer.png" alt="Timer icon" aria-hidden="true">
+                        <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
+                        <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
                     </div>
                 </div>
                 <div class="line line-3">
-                    <div class="line-content">
+                    <div class="line-content marquee">
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Ml3.png" alt="Ml3 icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./SoccerL3.png" alt="Soccer line 3 icon">
+                        <img src="./M.png" alt="M icon">
                         <img src="./Crown.png" alt="Crown icon">
                         <img src="./Ml3.png" alt="Ml3 icon">
                         <img src="./Shield.png" alt="Shield icon">
                         <img src="./SoccerL3.png" alt="Soccer line 3 icon">
                         <img src="./M.png" alt="M icon">
                         <img src="./Shield.png" alt="Shield icon">
-                        <img aria-hidden="true" src="./Crown.png" alt="Crown icon">
+                        <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
                         <img src="./Ml3.png" alt="Ml3 icon" aria-hidden="true">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
                         <img src="./SoccerL3.png" alt="Soccer line 3 icon" aria-hidden="true">
                         <img src="./M.png" alt="M icon" aria-hidden="true">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
+                        <img src="./Ml3.png" alt="Ml3 icon" aria-hidden="true">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
+                        <img src="./SoccerL3.png" alt="Soccer line 3 icon" aria-hidden="true">
+                        <img src="./M.png" alt="M icon" aria-hidden="true">
+                    </div>
+                    <div class="line-content marquee" aria-hidden="true">
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Ml3.png" alt="Ml3 icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./SoccerL3.png" alt="Soccer line 3 icon">
+                        <img src="./M.png" alt="M icon">
                         <img src="./Crown.png" alt="Crown icon">
                         <img src="./Ml3.png" alt="Ml3 icon">
                         <img src="./Shield.png" alt="Shield icon">
                         <img src="./SoccerL3.png" alt="Soccer line 3 icon">
                         <img src="./M.png" alt="M icon">
                         <img src="./Shield.png" alt="Shield icon">
-                        <img aria-hidden="true" src="./Crown.png" alt="Crown icon">
+                        <img src="./Crown.png" alt="Crown icon" aria-hidden="true">
                         <img src="./Ml3.png" alt="Ml3 icon" aria-hidden="true">
                         <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
                         <img src="./SoccerL3.png" alt="Soccer line 3 icon" aria-hidden="true">
                         <img src="./M.png" alt="M icon" aria-hidden="true">
-                        <img src="./Shield.png" alt="Shield icon" aria-hidden="true">
+                        <img src="./Crown.png" alt="Crown icon">
+                        <img src="./Ml3.png" alt="Ml3 icon">
+                        <img src="./Shield.png" alt="Shield icon">
+                        <img src="./SoccerL3.png" alt="Soccer line 3 icon">
+                        <img src="./M.png" alt="M icon">
                     </div>
                 </div>
             </div>
+
 
 
             <div class="blog">
@@ -181,10 +237,12 @@
             <li class="li-orange"><a href="#">Terms & Conditions</a></li>
             <li class="li-white"><a href="#">Cookies</a></li>
             <li class="li-white"><a href="#">Contacts</a></li>
+            <li class="li-white"><a href="#">Careers</a></li>
+            <li class="li-white"><a href="#">Brand Guide</a></li>
         </ul>
         <div class="social-container">
             <p class="footer-p">Our social media:</p>
-            <div>
+            <div class="social-icons">
                 <ul class="social-icons">
                     <li><a href="#"><img src="./Twitter.png" alt="Twitter icon"></a></li>
                     <li><a href="#"><img src="./LinkedIn.png" alt="LinkedIn icon"></a></li>

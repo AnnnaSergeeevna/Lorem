@@ -9,22 +9,42 @@ document.addEventListener("DOMContentLoaded", function () {
         const contentHeight = list.scrollHeight;
         const scrollTop = list.scrollTop;
 
-        // Calculate the maximum scrollable distance
         const maxScroll = contentHeight - containerHeight;
 
-        // Calculate the proportion of scrolled distance to max scroll
         const scrollRatio = maxScroll > 0 ? scrollTop / maxScroll : 0;
 
-        // Calculate the position of the thumb within the track
         const thumbPosition = scrollRatio * (track.clientHeight - thumb.clientHeight);
 
-        // Set the thumb position with offset for positioning
         thumb.style.top = `${thumbPosition}px`;
-        thumb.style.right = '0'; // Adjust the right position
+        thumb.style.right = '0';
     });
 
-    // Trigger initial scroll position update
     list.dispatchEvent(new Event('scroll'));
 });
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    const points = document.querySelector('.points');
+    const title = document.querySelector('.title');
+    const loginButton = document.querySelector('.btn-secondary');
+    const signupButton = document.querySelector('.btn-orange-prim');
+
+    if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+        points.style.display = 'none';
+        loginButton.style.display = 'none';
+        signupButton.style.display = 'none';
+        title.style.marginTop = '70px';
+    } else {
+        nav.style.display = 'flex';
+        points.style.display = 'block';
+        loginButton.style.display = 'block';
+        signupButton.style.display = 'block';
+        title.style.marginTop = '560px';
+    }
+}
+
+
+
 
 
