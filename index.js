@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         burger.classList.toggle('active');
 
         if (nav.style.display === 'flex' || nav.classList.contains('open')) {
-            nav.style.display = 'none';
+            nav.style.display = 'flex';
             points.style.display = 'none';
             headerButtons.style.display = 'none';
             title.style.marginTop = '70px';
