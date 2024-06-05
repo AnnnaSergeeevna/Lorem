@@ -22,27 +22,34 @@ document.addEventListener("DOMContentLoaded", function () {
     list.dispatchEvent(new Event('scroll'));
 });
 
-function toggleMenu() {
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.querySelector('.burger-menu');
     const nav = document.querySelector('.nav');
     const points = document.querySelector('.points');
+    const headerButtons = document.querySelector('.header-buttons');
     const title = document.querySelector('.title');
-    const loginButton = document.querySelector('.btn-secondary');
-    const signupButton = document.querySelector('.btn-orange-prim');
 
-    if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-        points.style.display = 'none';
-        loginButton.style.display = 'none';
-        signupButton.style.display = 'none';
-        title.style.marginTop = '70px';
-    } else {
-        nav.style.display = 'flex';
-        points.style.display = 'block';
-        loginButton.style.display = 'block';
-        signupButton.style.display = 'block';
-        title.style.marginTop = '560px';
+    function toggleMenu() {
+        burger.classList.toggle('active');
+
+        if (nav.style.display === 'flex' || nav.classList.contains('open')) {
+            nav.style.display = 'none';
+            points.style.display = 'none';
+            headerButtons.style.display = 'none';
+            title.style.marginTop = '70px';
+
+        } else {
+            nav.style.display = 'flex';
+            points.style.display = 'block';
+            headerButtons.style.display = 'block';
+            title.style.marginTop = '560px';
+        }
     }
-}
+
+    burger.addEventListener('click', toggleMenu);
+});
+
+
 
 
 

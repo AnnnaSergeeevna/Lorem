@@ -75,7 +75,8 @@ img.masked-image {
     box-sizing: border-box;
 }
 
-.burger-menu {
+.burger-menu,
+.planetImg {
     display: none;
     font-size: 30px;
     cursor: pointer;
@@ -420,7 +421,6 @@ ul {
 }
 
 .li-orange a {
-    font-family: Lexend;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -429,7 +429,6 @@ ul {
 }
 
 .li-white a {
-    font-family: Lexend;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -450,7 +449,6 @@ ul {
 }
 
 .footer-p {
-    font-family: Lexend;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -481,7 +479,7 @@ ul {
     .header {
         display: flex;
         justify-content: flex-end;
-        width: 100%;
+        width: 94%;
         height: 56px;
     }
 
@@ -528,28 +526,22 @@ ul {
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+        z-index: 0;
     }
 
-    /* 
-    .btn-orange-prim {
-        display: flex !important;
-        position: absolute;
-        top: 548px;
-        width: 100%;
-        max-width: 300px;
-        height: 53px;
-        border-radius: 48px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: red;
-    } */
-    /* 
+    .btn-lang {
+        display: none;
+        opacity: 0;
+        z-index: 0;
+
+    }
+
     .btn-secondary {
         display: flex;
         position: absolute;
-        top: 485px;
+        top: 453px;
+        right: 0px;
+        left: 0px;
         width: 100%;
         max-width: 300px;
         height: 53px;
@@ -558,32 +550,30 @@ ul {
         justify-content: center;
         align-items: center;
         font-size: 18px;
+        margin: 0px;
+        padding: 0px;
         z-index: 1;
-    } */
+    }
 
-
-    .btn-lang,
-    .btn-orange-prim,
-    .btn-secondary {
-        display: block !important;
-        width: 100% !important;
-        max-width: 300px !important;
-        height: 53px !important;
+    .btn-orange-prim {
+        display: flex;
+        position: absolute;
+        top: 513px;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        max-width: 300px;
+        height: 53px;
         border-radius: 48px;
         text-align: center;
         justify-content: center;
         align-items: center;
         font-size: 18px;
-        z-index: 1000 !important;
-        margin-top: 10px;
-        background-color: red !important;
-        /* временно для отладки */
-        color: white !important;
-        /* временно для отладки */
     }
 
-
     .planetImg {
+        position: absolute;
+        right: 48px;
         width: 24px;
         height: 24px;
         padding: 4px;
@@ -594,11 +584,67 @@ ul {
 
     }
 
+    /* 
     .burger-menu {
         display: flex;
         align-items: center;
         height: 36px;
         cursor: pointer;
+        z-index: 2;
+    } */
+
+    .burger-menu {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        border: none;
+        background: transparent;
+        width: 26px;
+        height: 26px;
+        margin: 0px auto;
+    }
+
+    .planetImg {
+        display: block;
+        margin-right: 40px auto;
+    }
+
+    .burger-menu::before,
+    .burger-menu::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #ffffff;
+    }
+
+    .burger-menu::before {
+        top: 0;
+        box-shadow: 0 11px 0 #ffffff;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+
+    .burger-menu::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+    }
+
+    .burger-menu.active::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+
+    .burger-menu.active::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
     }
 
     .main {
@@ -662,6 +708,7 @@ ul {
         justify-content: center;
         align-items: center;
         font-size: 18px;
+        margin-right: 0px
     }
 
     .blog {
@@ -825,10 +872,14 @@ ul {
 
     .footer-container {
         display: flex;
+        justify-content: center;
         width: 100%;
-        height: 233px;
+        height: 230px;
+        border-top: solid 2px rgba(249, 114, 71, 1);
+        border-left: solid 2px rgba(249, 114, 71, 1);
+        border-right: solid 2px rgba(249, 114, 71, 1);
         border-radius: 50px 50px 0px 0px;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
 
     .pages {
@@ -839,7 +890,7 @@ ul {
         padding-top: 20px;
         padding-left: 20px;
         height: 108px;
-        margin: 0;
+        margin: 0px;
     }
 
     .pages ul {
@@ -859,7 +910,6 @@ ul {
     }
 
     .li-white a {
-        font-family: Lexend;
         font-size: 14px;
         text-align: center;
         color: rgb(255, 255, 255);
@@ -872,9 +922,10 @@ ul {
         align-items: flex-start;
         padding-left: 20px;
         opacity: 0.9;
-        margin: 0px;
-        height: 55px;
-        margin: 0;
+        height: 60px;
+        margin-top: 0px;
+
+        margin-bottom: 30px;
     }
 
     .footer-p {
@@ -888,9 +939,8 @@ ul {
     .social-icons {
         display: flex;
         width: 100%;
-        gap: 20px;
+        gap: 10px;
         justify-content: space-around;
-        padding: 0;
     }
 
     .social-icons img {
